@@ -20,28 +20,13 @@
         <finalName>store</finalName>
         <plugins>
             <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
-                <configuration>
-                    <release>10</release>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.2.1</version>
-                <configuration>
-                    <warSourceDirectory>WebContent</warSourceDirectory>
-                </configuration>
-            </plugin>
-
-            <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
                     <url>http://localhost:${tomcat.maven.http.port}/manager/text</url>
                     <server>mytomcat</server>
-                    <path>/store</path>
+                    <path>/</path>
                     <username>test</username>
                     <password>test</password>
                 </configuration>
