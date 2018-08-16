@@ -1,1 +1,1 @@
-mvn tomcat7:redeploy
+call mvn clean tomcat7:redeploy

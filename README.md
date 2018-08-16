@@ -1,9 +1,17 @@
 # Store-project
 
+Prerequisites:
+1. Download and configure Tomcat Server(http://tomcat.apache.org/).
+2. Set `%CATALINA_HOME%`  environment variable as path to apache tomcat folder.
+
 To run:
-0. If needed change port in start.bat(property "tomcat.maven.http.port" by default is equal 8080)
 1. Execute start.bat
-2. Open `localhost:8080/store`
+2. Press any button to deploy application after server has beenstarted up.
+3. Press any button to open main page after application has been deployed.
+
+To stop:
+1. Execute stop.bat
+2. Press any button to shutdown server after application has been undeployed.
 
 To redeploy:
 1. Execute redeploy.bat

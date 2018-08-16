@@ -14,16 +14,27 @@
     </properties>
 
     <build>
+        <finalName>store</finalName>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <warName>store</warName>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.1</version>
+                <version>2.2</version>
                 <configuration>
+                    <url>http://localhost:${tomcat.maven.http.port}/manager/text</url>
                     <server>mytomcat</server>
-                    <url>http://localhost</url>
                     <path>/store</path>
-                    <port>${tomcat.maven.http.port}</port>
+                    <username>test</username>
+                    <password>test</password>
                 </configuration>
             </plugin>
         </plugins>
