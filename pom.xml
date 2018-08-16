@@ -10,7 +10,7 @@
     <packaging>war</packaging>
 
     <properties>
-        <tomcat.maven.http.port>2307</tomcat.maven.http.port>
+        <tomcat.maven.http.port>8080</tomcat.maven.http.port>
     </properties>
 
     <build>
