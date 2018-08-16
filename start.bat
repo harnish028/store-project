@@ -1,1 +1,1 @@
-mvn clean install tomcat7:run tomcat7:deploy
+mvn clean install tomcat7:run tomcat7:deploy -Dtomcat.maven.http.port=2308
